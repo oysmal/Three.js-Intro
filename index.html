@@ -3,12 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Forelesning Three.js</title>
-	<script src="scripts/three.min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script src="scripts/three.js"></script>
+	<script type="text/javascript" src="scripts/solarSystem.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
 </head>
 <body>
 	<canvas id="canvas">
 	</canvas>
-	
+
+	<!-- BOOTSTRAPING THE APPLICATION (entry point is scripts/app.js) -->
+	<script>
+		window.onload = () => {
+			new App();
+		}
+	</script>
 </body>
 </html>
